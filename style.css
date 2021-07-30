@@ -1,1 +1,5 @@
-sty
+@font-face {
+    font-family: 'ralewaythin', sans-serif ;
+    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-variablefont_wght-webfont.woff') format('woff');
+} 
