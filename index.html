@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,8 +21,8 @@
                 </div>    
                 <nav>
                     <ul>
-                        <li><a id="lien_hebergement" href="#Hébergements à Marseille">Hébergements</a></li>
-                        <li><a id="lien_activite" href="#Activités à Marseille">Activités</a></li>
+                        <li><a id="lien_hebergement" href="#Hebergements">Hébergements</a></li>
+                        <li><a id="lien_activite" href="#Activites">Activités</a></li>
                         <li><a id="lien_inscription" href="S'inscrire">S'inscrire</a></li>
                     </ul>
                 </nav>
@@ -35,31 +35,32 @@
                 <section id="recherche" >
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt">
                     <form method="post" action="traitement.php"
                     <p>
                         <input type="text" name="recherche"
                         id="rech" placeholder="Marseille, France"
                     </p>
                         <input type="submit" value="Rechercher" />
-                    </form>
+                    </form></i>
+                    <div id="loupe"><i class="fa fa-search"></i></div>
 
                     <p>Filtres</p>
                     <div id="filtres">
                         <ul>
-                                <i class="fas fa-money-bill-wave"><li>Économique</li></i>
-                                <i class="fas fa-child"><li>Familial</li></i>
-                                <i class="fas fa-heart"><li>Romantique</li></i>
-                                <i class="fas fa-dog"><li>Animaux autorisés</li></i>
+                                <i class="fas fa-money-bill-wave"></i><li>Économique</li>
+                                <i class="fas fa-child"></i><li>Familial</li>
+                                <i class="fas fa-heart"></i><li>Romantique</li>
+                                <i class="fas fa-dog"></i><li>Animaux autorisés</li>
                         </ul>                
                     </div>
 
-                    <p><i class="fas fa-info">Plus de 500 logements sont disponibles dans cette ville</i></p>
+                    <p id="resultat_rech"><i class="fa fa-info-circle">Plus de 500 logements sont disponibles dans cette ville</i></p>
                 </section>
 
                 <!--Les plus populaires-->
 
-                <aside>
+                <aside id="populaires">
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
                     <div class="conteneur">
@@ -104,7 +105,7 @@
 
                 <!-- Hébergements à Marseille -->
                     
-                <section>    
+                <section id="Hebergements">    
                     <h2 class="titres_section">Hébergements à Marseille</h2>
                     <div id="conteneur">
                         <div class="hebergements">
@@ -180,32 +181,37 @@
                             </a>
                         </div>
                     </div>
+                    <p>Afficher plus</p>
                 </section>
 
                 <!--Activités à Marseille-->
 
-                <section id="activites" >
+                <section id="Activites" >
                     <div id="conteneur">
                         <h2 class="titres_section">Activités à Marseille</h2>
                         <div id="conteneur">
                             <div class="activites">
-                                <img src="./images/activites/4_small/fort_de_pomegues.jpg" alt="Fort de Pomègues" />
+                                <a href="#"><img src="./images/activites/4_small/fort_de_pomegues.jpg" alt="Fort de Pomègues" /></a>
                                 <h3>Vieux Port</h3>
                             </div>
                             <div class="activites">
-                                <img src="./images/activites/4_small/vieux_port.jpg" alt="Vieux Port" />
+                                <a href="#"><img src="./images/activites/4_small/vieux_port.jpg" alt="Vieux Port" /></a>
                                 <h3>Fort de Pomègues</h3>
-                            </div><div class="activites">
+                            </div>
+                            <div class="activites">
+                                <a href="#"><img src="./images/activites/4_small/iles_du_frioul.jpg" alt="Îles du Frioul" /></a>
                                 <h3>Îles du Frioul</h3>
-                                <img src="./images/activites/4_small/iles_du_frioul.jpg" alt="Îles du Frioul" />
-                            </div><div class="activites">
-                                <img src="./images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques" />
+                            </div>
+                            <div class="activites">
+                                <a href="#"><img src="./images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques" /></a>
                                 <h3>Parc National des Calanques</h3>
-                            </div><div class="activites">
-                                <img src="./images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre-Dame-de-la-Garde" />
+                            </div>
+                            <div class="activites">
+                                <a href="#"><img src="./images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre-Dame-de-la-Garde" /></a>
                                 <h3>Notre-Dame-de-la-Garde</h3>
-                            </div><div class="activites">
-                                <img src="./images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp" />
+                            </div>
+                            <div class="activites">
+                                <a href="#"><img src="./images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp" /></a>
                                 <h3>Parc Longchamp</h3>
                             </div>
                         </div>
