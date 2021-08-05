@@ -4,7 +4,7 @@ body {
   font-size: normal;
   width: 100%;
   margin: 0;
-  padding: 0%;
+  padding: 0 1rem 0 1rem;
   justify-content: center;
   flex-direction: column;
 }
@@ -64,28 +64,81 @@ nav ul {
 
 /* Recherche */
 
-#filtres ul {
-  list-style: none;
+#barre_recherche {
+  border-radius: 10px;
 }
 
-#filtres i {
+#filtres .fas {
   color: #0065fc;
-  background-image: #deebff;
-  border: solid 1px #deebff;
-  border-radius: 50px 50px 50px 50px;
+  background-color: #deebff;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  border: 3px solid rgba(242, 242, 242, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#filtres li {
-  border: 5px solid rgba(242, 242, 242, 0.5);
-  border-radius: 50px 50px 50px 50px;
-  width: 12rem;
+p {
+  font-weight: bolder;
+}
+
+.bouton_filtre {
+  height: 43px;
+  border-top: 4px solid #f2f2f2;
+  border-right: 4px solid #f2f2f2;
+  border-bottom: 4px solid #f2f2f2;
+  border-radius: 30px;
+  margin-right: 350px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+span {
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
+  color: black;
 }
 
 #loupe {
+  display: flex;
   background-color: #0065fc;
   color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultat_rech {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#resultat_rech .fas::before {
+  background-color: white;
+  color: #0065fc;
   width: 1.5rem;
-  border-radius: 30px 30px 30px 30px;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 3px solid rgba(242, 242, 242, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultat_rech p::after {
+  display: flex;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 /* Les plus populaires */
@@ -99,7 +152,6 @@ nav ul {
   border-radius: 30px 0px 0px 30px;
   height: 200px;
   padding: 1% 15% 1% 1%;
-  transform: scale(0.9);
   transform: translate(-38px);
 }
 
@@ -117,6 +169,13 @@ nav ul {
   padding: 30px 10%;
   margin: 4% 0 2% 2%;
   border-radius: 30px 30px 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.texte_photo {
+  display: block;
+  flex-direction: column;
 }
 
 /* Hébergements à Marseille */
@@ -136,6 +195,7 @@ footer {
   color: black;
   flex-direction: column;
   background-color: #f2f2f2;
+  width: 100%;
 }
 
 div.colonne_footer ul {
@@ -143,5 +203,6 @@ div.colonne_footer ul {
   color: black;
   display: flex;
   flex-direction: column;
+  align-items: center;
   list-style: none;
 }

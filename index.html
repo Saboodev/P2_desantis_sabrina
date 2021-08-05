@@ -36,10 +36,10 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                     <i class="fas fa-map-marker-alt">
-                    <form method="post" action="traitement.php"
-                    <p>
+                    <form method="post" action="traitement.php">
+                    <p id="barre_recherche">
                         <input type="text" name="recherche"
-                        id="rech" placeholder="Marseille, France"
+                        id="rech" placeholder="Marseille, France">
                     </p>
                         <input type="submit" value="Rechercher" />
                     </form></i>
@@ -47,15 +47,28 @@
 
                     <p>Filtres</p>
                     <div id="filtres">
-                        <ul>
-                                <i class="fas fa-money-bill-wave"></i><li>Économique</li>
-                                <i class="fas fa-child"></i><li>Familial</li>
-                                <i class="fas fa-heart"></i><li>Romantique</li>
-                                <i class="fas fa-dog"></i><li>Animaux autorisés</li>
-                        </ul>                
+                            <a class="bouton_filtre" href="#">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>Économique</span>
+                            </a>
+                            <a class="bouton_filtre" href="#">
+                                <i class="fas fa-child"></i>
+                                <span>Familial</span>
+                            </a>
+                            <a class="bouton_filtre" href="#">
+                                <i class="fas fa-heart"></i>
+                                <span>Romantique</span>
+                            </a>
+                            <a class="bouton_filtre" href="#">
+                                <i class="fas fa-dog"></i>
+                                <span>Animaux autorisés</span>   
+                            </a>     
                     </div>
 
-                    <p id="resultat_rech"><i class="fa fa-info-circle">Plus de 500 logements sont disponibles dans cette ville</i></p>
+                    <div id="resultat_rech">
+                        <i class="fas fa-info"></i>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
                 </section>
 
                 <!--Les plus populaires-->
@@ -67,6 +80,7 @@
                         <div class="Populaires">
                             <a href="#">
                             <img src="./images/hebergements/4_small/hotel_le_soleil_du_matin.jpg" alt="Hôtel Le soleil du matin" />
+                            <div class="texte_photo">
                             <h3>Hôtel Le soleil du matin</h3>
                             <p>Nuit à partir de 128€</p>
                             <i class="fas fa-star"></i>
@@ -74,6 +88,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
+                            </div>
                             </a>
                         </div>
                         <div class="Populaires">
