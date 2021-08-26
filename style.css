@@ -91,14 +91,11 @@ ul #lien_hebergement {
   color: #0065fc;
   font-weight: 500;
   padding-bottom: 20px;
-  width: 100%;
-  margin: 48px 0 3px;
 }
 
 ul #lien_activite {
   font-weight: 500;
   padding-bottom: 20px;
-  width: 100%;
 }
 
 #trait_bleu {
@@ -282,9 +279,9 @@ label {
 #bloc_populaires {
   background-color: #f2f2f2;
   margin-left: -1rem;
-  margin-right: -1rem;
+  margin-right: -1.8rem;
   margin-bottom: 1rem;
-  padding: 1rem 0.4rem 1rem 0.4rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -870,5 +867,14 @@ li {
     border: 2px solid #0065fc;
     padding: 0;
     box-shadow: 10px 10px 15px -1px #f2f2f2;
+  }
+
+  /** Footer **/
+  #conteneur_footer {
+    justify-content: flex-start;
+  }
+
+  .colonne_footer {
+    margin-right: 8rem;
   }
 }
