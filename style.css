@@ -224,7 +224,7 @@ input[type="text"]::placeholder {
   min-width: 170px;
   max-width: 200px;
   margin: 0.5rem 0;
-  margin-right: 0.5rem;
+  margin-right: 0.4rem;
 }
 
 #filtres .fas {
@@ -245,7 +245,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-label {
+.titres_filtres {
   font-weight: bold;
   margin: 0 0.5rem 0 0.5rem;
   color: black;
@@ -595,6 +595,10 @@ li {
     display: none;
   }
 
+  #recherche {
+    margin: 0 1rem;
+  }
+
   #loupe {
     display: none;
     background-color: #0065fc;
@@ -636,6 +640,20 @@ li {
     margin-bottom: 0.6rem;
   }
 
+  .bouton_filtre {
+    margin-right: 0.3rem;
+  }
+
+  .titres_section {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  #titre_icone_du_bloc {
+    padding: 0;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+
   .populaires {
     position: relative;
   }
@@ -669,9 +687,8 @@ li {
   .activites {
     border-radius: 20px;
     box-shadow: 0px 5px 5px -1px #dfdfdf;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem;
     height: 100%;
-    width: 100%;
     padding: 0;
   }
 
@@ -747,6 +764,10 @@ li {
 
   #trait_gris {
     display: none;
+  }
+
+  #recherche {
+    padding: 0;
   }
 
   /**barre de recherche**/
@@ -891,9 +912,13 @@ li {
   /** Footer **/
   #conteneur_footer {
     justify-content: flex-start;
+    margin-left: 1rem;
   }
 
   .colonne_footer {
     margin-right: 8rem;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
   }
 }
