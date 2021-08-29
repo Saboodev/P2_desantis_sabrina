@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  margin: 1rem auto 0.6rem;
+  margin: 1.5rem auto 0.6rem;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -54,51 +54,53 @@ p {
 
 /**** Header ****/
 
-header {
-  width: 100%;
-}
-
-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  margin: 0 1rem;
+header div a {
+  display: flex;
+  padding: 40px 20px;
+  text-align: center;
+  justify-content: space-around;
 }
 
 #logo img {
   width: 5rem;
   height: 5rem;
-  grid-area: 1/1;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
 }
 
-header a {
-  padding: 2.5rem 0.5rem;
-}
-nav a {
+nav {
   width: 100%;
-  display: grid;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-#lien_hebergement {
-  color: #0065fc;
-  font-weight: 500;
-  padding-bottom: 20px;
-  text-align: center;
-  grid-area: 2/1;
+nav div {
+  width: 50%;
 }
 
-#lien_activite {
-  font-weight: 500;
-  padding-bottom: 20px;
-  text-align: center;
-  grid-area: 2/2;
+nav :nth-child(1) a {
+  float: left;
+}
+nav :nth-child(2) a {
+  float: right;
 }
 
-#lien_inscription {
+div #lien_inscription {
   color: #0065fc;
   font-weight: 800;
-  grid-area: 1/2;
-  text-align: right;
+  margin-right: 1rem;
+}
+
+div #lien_hebergement {
+  color: #0065fc;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+div #lien_activite {
+  font-weight: 500;
+  padding-bottom: 20px;
 }
 
 #trait_bleu {
@@ -107,7 +109,6 @@ nav a {
   left: 0;
   width: 50%;
   height: 3px;
-  margin-top: -10px;
 }
 
 #trait_gris {
@@ -116,7 +117,6 @@ nav a {
   right: 0;
   width: 50%;
   height: 3px;
-  margin-top: -10px;
 }
 
 /**** Recherche ****/
@@ -574,10 +574,30 @@ li {
     flex-flow: row nowrap;
   }
 
+  nav div {
+    width: unset;
+  }
+
   nav a {
     display: flex;
     justify-content: flex-end;
     font-size: 14px;
+  }
+
+  nav :first-child {
+    width: 70%;
+  }
+
+  nav :nth-child(2) a {
+    float: none;
+  }
+
+  #inscription {
+    order: 3;
+  }
+
+  div #lien_inscription {
+    margin-right: 0;
   }
 
   #lien_hebergement {
@@ -594,6 +614,8 @@ li {
   #trait_gris {
     display: none;
   }
+
+  /** Recherche **/
 
   #recherche {
     margin: 0 1rem;
@@ -627,6 +649,8 @@ li {
     display: flex;
   }
 
+  /** Filtres **/
+
   #section_filtres {
     display: flex;
     flex-wrap: wrap;
@@ -645,9 +669,10 @@ li {
     margin-right: 0.3rem;
   }
 
+  /** Les plus populaires **/
+
   .titres_section {
     margin-bottom: 1rem;
-    margin-left: 1rem;
     margin-top: 1rem;
   }
 
@@ -660,11 +685,11 @@ li {
     position: relative;
   }
 
+  /** Hebergements **/
+
   #conteneur_hebergements {
     display: flex;
     flex-flow: row wrap;
-    width: 100vw;
-    margin-top: 2rem;
   }
 
   .hebergements {
@@ -672,8 +697,10 @@ li {
     background-color: white;
     border-radius: 30px;
     box-shadow: 1px 5px 5px 1px #f2f2f2;
-    margin: 10px;
+    margin: 0.85rem;
   }
+
+  /** Activites **/
 
   #conteneur_activites {
     display: flex;
@@ -714,6 +741,8 @@ li {
     height: 85%;
   }
 
+  /** Footer **/
+
   #conteneur_footer {
     display: flex;
     flex-flow: row nowrap;
@@ -724,26 +753,10 @@ li {
 /****version desktop****/
 
 @media screen and (min-width: 990px) {
-  header {
-    height: 7rem;
-  }
-
-  nav {
-    display: flex;
-    flex-flow: row nowrap;
-  }
-
-  nav a {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 14px;
-    margin: 20px;
-    margin-top: -0.5rem; /** valeur négative pour compenser l'espace en haut du menu et coller la bordure**/
-  }
-
   #logo img {
     width: 5rem;
-    height: 6rem;
+    height: 5rem;
+    margin-top: 0;
   }
 
   #lien_hebergement {
@@ -752,7 +765,7 @@ li {
     padding-bottom: 20px;
     border-top-color: #0065fc;
     border-top: solid;
-    padding-top: 2.3rem;
+    padding-top: 2.2rem;
   }
 
   #lien_inscription {
@@ -768,17 +781,21 @@ li {
     display: none;
   }
 
+  /**barre de recherche**/
+
   #recherche {
     padding: 0;
   }
-
-  /**barre de recherche**/
 
   #bloc_rechercher:hover {
     box-shadow: 10px 10px 15px -1px #f2f2f2;
   }
 
   /** Filtres **/
+
+  .bouton_filtre {
+    margin-right: 1rem;
+  }
 
   .bouton_filtre:hover {
     border: 1px solid #0065fc;
@@ -798,7 +815,7 @@ li {
     margin: 0 1rem 2rem 1rem;
   }
 
-  /** populaires **/
+  /** Les plus populaires **/
 
   #bloc_populaires {
     background-color: #f2f2f2;
@@ -842,6 +859,7 @@ li {
     display: inline-flex;
     flex-direction: column;
   }
+
   /**hebergements**/
 
   #Hebergements h2 {
@@ -913,6 +931,7 @@ li {
   }
 
   /** Footer **/
+
   #conteneur_footer {
     justify-content: flex-start;
     margin-left: 1rem;
