@@ -850,12 +850,14 @@ li {
 
   .populaires:hover {
     transform: scale(1.05);
+    transition: 0.8s ease-in-out;
     padding: 0;
     box-shadow: 10px 10px 15px -1px #d3d3d3;
   }
 
   .populaires:focus {
     transform: scale(1.05);
+    transition: 0.8s ease-in-out;
     padding: 0;
     box-shadow: 10px 10px 15px -1px #d3d3d3;
   }
@@ -889,12 +891,14 @@ li {
 
   .hebergements:hover {
     transform: scale(1.05);
+    transition: 0.8s ease-in-out;
     padding: 0;
     box-shadow: 10px 10px 15px -1px #d3d3d3;
   }
 
   .hebergements:focus {
     transform: scale(1.05);
+    transition: 0.8s ease-in-out;
     padding: 0;
     box-shadow: 10px 10px 15px -1px #d3d3d3;
   }
@@ -925,11 +929,13 @@ li {
 
   .activites:hover {
     transform: scale(1.05);
+    transition: 0.8s ease-in-out;
     box-shadow: 10px 10px 15px -1px #d3d3d3;
   }
 
   .activites:focus {
     transform: scale(1.05);
+    transition: 0.8s ease-in-out;
     padding: 0;
     box-shadow: 10px 10px 15px -1px #d3d3d3;
   }
