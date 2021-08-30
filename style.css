@@ -827,6 +827,18 @@ li {
     max-width: 30%;
   }
 
+  #titre_icone_du_bloc {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+
+  #conteneur_populaires {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
   .populaires {
     height: 9rem;
     background-color: white;
@@ -848,16 +860,8 @@ li {
     box-shadow: 10px 10px 15px -1px #d3d3d3;
   }
 
-  #titre_icone_du_bloc {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    margin: 1rem;
-  }
-
-  #conteneur_populaires {
-    display: inline-flex;
-    flex-direction: column;
+  .etoiles_populaires {
+    margin-top: 2.2rem;
   }
 
   /**hebergements**/
@@ -880,7 +884,7 @@ li {
   .hebergements {
     box-shadow: 8px 8px 5px -5px #d3d3d3;
     padding: 0.2rem;
-    margin: 0.85rem 0.625rem 0 0.85rem;
+    margin: 0.85rem 0.625rem 0.85rem 0;
   }
 
   .hebergements:hover {
