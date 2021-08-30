@@ -880,7 +880,7 @@ li {
   .hebergements {
     box-shadow: 8px 8px 5px -5px #d3d3d3;
     padding: 0.2rem;
-    margin-right: 0.625rem;
+    margin: 0.85rem 0.625rem 0 0.85rem;
   }
 
   .hebergements:hover {
@@ -938,7 +938,7 @@ li {
   }
 
   .colonne_footer {
-    margin-right: 8rem;
+    margin-right: 10rem;
     margin-top: 0;
     margin-left: 0;
     padding: 0;
