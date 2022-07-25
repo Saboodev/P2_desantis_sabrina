@@ -1,18 +1,14 @@
-Reservia
+# Reservia
+## _Projet 2 du parcours "développeur web" chez Openclassrooms_
 
-
-Site réalisé dans le cadre du projet 2 de la formation "Développeur web" chez OpenClassroom. 
-
+## Scénario
 L'intitulé de ce projet est "Transformez une maquette en site web".
-
-Scénario 
 
 Vous avez trouvé votre premier stage en tant que développeur web chez Reservia, une petite entreprise proposant un outil de planification de vacances. 
 Leur site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
 Le nouveau design est basé sur les principes du Material Design.
 
-
-Fonctionnalités
+#### Fonctionnalités 
 
 • Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.
 
@@ -22,7 +18,7 @@ Fonctionnalités
 
 • Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
 
-Contraintes techniques
+#### Contraintes techniques 
 
 • Deux maquettes : l’une desktop et l’autre mobile. Le site devra également être adapté aux tablettes. Le développeur est libre de faire les adaptations nécessaires avec la mise en page, tant qu'aucun élément n'est coupé et que le texte a une taille suffisante. 
 
@@ -46,8 +42,10 @@ Contraintes techniques
 
 • Versionner le code avec Git, et ce dès les premières lignes de code. Ensuite déployer sur la page GitHub Pages ou GitLab Pages.
 
+#### Technologies
+HTML, CSS
 
-Réalisation du projet :
+#### Réalisation du projet 
 
 J'ai utilisé Visual Studio Code, ses plugins, ainsi que le terminal intégré afin d'alimenter mon dépôt distant. J'ai également utilisé Github et Github Pages.
 
@@ -56,4 +54,3 @@ En amont du projet, les maquettes ont été découpé afin de visualiser les dif
 J'ai commencé à intégrer le projet en mobile first. 
 
 Le projet a été versionné et est validé sur le validateur W3C HTML et CSS.
-
